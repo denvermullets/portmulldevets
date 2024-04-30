@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
           </Heading>
           <Text variant="hero">
             I'm a product focused fullstack developer, designer and photographer. I love working
-            with Ruby, Rails, Typescript, React, Next, and Nodejs.
+            with Ruby, Rails, Typescript, React, Next, and Nodejs. I'm constantly building
           </Text>
         </Flex>
       </Flex>
