@@ -7,10 +7,9 @@ export const momentText: StyleConfig = {
   }),
 
   variants: {
-    navLinks: (props: StyleFunctionProps) => ({
-      color: mode("purpleMoment.900", "darkMode.100")(props),
-      marginLeft: "5px",
-      fontWeight: "800",
+    hero: () => ({
+      color: "vazBlack.50",
+      fontWeight: "400",
     }),
     navHeader: (props: StyleFunctionProps) => ({
       color: mode("purpleMoment.800", "darkMode.200")(props),
