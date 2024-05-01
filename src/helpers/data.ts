@@ -42,7 +42,16 @@ export const projectData = [
         title: "Backend Repo",
       },
     ],
-    tags: ["React", "Typescript", "Ruby on Rails", "REDIS", "SolidQueue", "Figma", "Design"],
+    tags: [
+      "React",
+      "Typescript",
+      "Ruby on Rails",
+      "REDIS",
+      "SolidQueue",
+      "Postgres",
+      "Figma",
+      "Design",
+    ],
   },
   {
     id: 2,

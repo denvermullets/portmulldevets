@@ -13,12 +13,14 @@ const TagPill: React.FC<TagPillProps> = ({ status }) => {
         return "vazRed.50";
       case "solidqueue":
         return "vazRed.50";
+      case "postgres":
+        return "vazRed.50";
       case "node.js":
         return "vazRed.50";
       case "react":
-        return "vazBlue.700";
+        return "vazBlue.500";
       case "typescript":
-        return "vazBlue.700";
+        return "vazBlue.500";
       default:
         return "vazGreen.50";
     }

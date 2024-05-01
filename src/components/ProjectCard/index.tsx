@@ -19,7 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageOnRight, projectData }) 
           borderRadius={4}
           padding={2}
           borderWidth={1}
-          height="auto"
+          height="100%"
         >
           <Image src={projectData.image} width="auto" />
         </Box>
@@ -33,14 +33,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageOnRight, projectData }) 
           </Heading>
         )}
         <Text variant="hero">{projectData.description}</Text>
-        <Flex direction="row" gap={2} marginTop={2}>
+        <Flex direction="row" gap={2} marginTop={2} width="100%" wrap="wrap">
           {projectData.tags.map((tag) => (
             <TagPill status={tag} />
           ))}
         </Flex>
+
         <Flex direction="row" align="end" gap={4} marginTop={8}>
           {projectData.links.map((link) => (
-            <Link to={link.url}>
+            <Link to={link.url} target="_blank" rel="noopener noreferrer">
               <Button variant="site">{link.title}</Button>
             </Link>
           ))}
@@ -50,11 +51,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageOnRight, projectData }) 
       {imageOnRight && (
         <Box
           width="50%"
+          bgColor="vazBeige.50"
           borderColor="vazBlue.300"
           borderRadius={4}
           padding={2}
           borderWidth={1}
-          bgColor="vazBeige.50"
+          height="100%"
         >
           <Image src={projectData.image} width="auto" />
         </Box>
