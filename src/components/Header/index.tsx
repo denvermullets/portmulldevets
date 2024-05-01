@@ -1,5 +1,5 @@
 import { Box, Flex, HStack, Heading, Text } from "@chakra-ui/react";
-import { Beard } from "../../helpers/icons";
+import { BeardHat } from "../../helpers/icons";
 
 const Header = () => {
   return (
@@ -16,15 +16,15 @@ const Header = () => {
       right="0"
       zIndex="banner"
     >
-      <HStack marginLeft={-2}>
+      <HStack>
         <Box height={10} width={10}>
-          <Beard />
+          <BeardHat />
         </Box>
         <Heading variant="navBar" as="h3" size="lg">
           Ryan Vaznis
         </Heading>
       </HStack>
-      <HStack spacing={4}>
+      <HStack spacing={4} marginRight={2}>
         <Text>About</Text>
         <Text>Projects</Text>
         <Text>Resume</Text>
