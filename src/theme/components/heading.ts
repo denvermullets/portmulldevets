@@ -6,12 +6,24 @@ export const portHeading: StyleConfig = {
   },
   variants: {
     navBar: {
-      color: "vazBlue.50",
+      color: "vazBlue.700",
       fontStyle: "normal",
       fontWeight: "600",
     },
+    sectionTitle: {
+      color: "vazBlue.700",
+      fontStyle: "italic",
+      fontWeight: "400",
+      fontSize: "1em",
+    },
+    freelanceTitle: {
+      color: "vazBlue.500",
+      fontStyle: "normal",
+      fontWeight: "400",
+      fontSize: "1.5em",
+    },
     hero: {
-      color: "vazBlue.50",
+      color: "vazBlue.700",
       fontStyle: "italic",
       fontWeight: "800",
       fontSize: "48px",

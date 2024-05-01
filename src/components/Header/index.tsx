@@ -8,13 +8,14 @@ const Header = () => {
       align="center"
       justifyContent="space-between"
       p={4}
-      borderBottomWidth="2px"
-      borderColor={"gray.200"}
+      borderBottomWidth="1px"
+      borderColor="vazBlue.300"
       width="100%"
       position="fixed"
       top="0"
       right="0"
       zIndex="banner"
+      bgColor="vazBeige.50"
     >
       <HStack>
         <Box height={10} width={10}>

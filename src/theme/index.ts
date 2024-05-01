@@ -2,11 +2,13 @@ import { extendTheme, theme as base } from "@chakra-ui/react";
 import { globalStyles } from "./styles";
 import { momentText } from "./components/text";
 import { portHeading } from "./components/heading";
+import { vazButton } from "./components/button";
 
 const customTheme = extendTheme({
   components: {
-    Text: { ...momentText },
+    Button: { ...vazButton },
     Heading: { ...portHeading },
+    Text: { ...momentText },
   },
   ...globalStyles,
 });

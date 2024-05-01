@@ -11,7 +11,9 @@ const Hero: React.FC = () => {
           </Heading>
           <Text variant="hero">
             I'm a product focused fullstack developer, designer and photographer. I love working
-            with Ruby, Rails, Typescript, React, Next, and Nodejs.
+            with Ruby, Rails, Typescript, React, Next, and Nodejs. By day I work at an agency where
+            we build apps for some of the world's largest companies. By night I jam on side projects
+            and/or freelance projects.
           </Text>
         </Flex>
         <Flex alignItems="center" justifyContent="center" direction="row" width="25%">
