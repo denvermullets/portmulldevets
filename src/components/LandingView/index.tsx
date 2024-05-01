@@ -2,6 +2,7 @@ import { Box, Divider, Flex, Heading } from "@chakra-ui/react";
 import Hero from "../Hero";
 import { projectData } from "../../helpers/data";
 import ProjectCard from "../ProjectCard";
+import { Fragment } from "react/jsx-runtime";
 
 const LandingView: React.FC = () => {
   return (
@@ -15,10 +16,10 @@ const LandingView: React.FC = () => {
       </Flex>
       <Flex direction="column" gap={8} paddingX={16}>
         {projectData.map((project, index) => (
-          <>
-            <ProjectCard key={index} projectData={project} imageOnRight={index % 2 !== 0} />
-            <Divider borderColor="vazBlue.700" />
-          </>
+          <Fragment key={index}>
+            <ProjectCard projectData={project} imageOnRight={index % 2 !== 0} />
+            {index + 1 !== projectData.length && <Divider borderColor="vazBlue.700" />}
+          </Fragment>
         ))}
       </Flex>
     </Box>

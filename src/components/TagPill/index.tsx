@@ -11,6 +11,12 @@ const TagPill: React.FC<TagPillProps> = ({ status }) => {
         return "vazRed.50";
       case "redis":
         return "vazRed.50";
+      case "sidekiq":
+        return "vazRed.50";
+      case "strapi":
+        return "vazRed.50";
+      case "rspec":
+        return "vazRed.50";
       case "solidqueue":
         return "vazRed.50";
       case "postgres":

@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { AspectRatio, Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import { ProjectData } from "../../helpers/data";
 import TagPill from "../TagPill";
 import { Link } from "react-router-dom";
@@ -21,7 +21,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageOnRight, projectData }) 
           borderWidth={1}
           height="100%"
         >
-          <Image src={projectData.image} width="auto" />
+          {projectData.image ? (
+            <>
+              <Link to={projectData.image} target="_blank" rel="noopener noreferrer">
+                <Image src={projectData.image} width="auto" />
+              </Link>
+            </>
+          ) : (
+            <AspectRatio ratio={16 / 9}>
+              <Box bgColor="vazBlue.500" />
+            </AspectRatio>
+          )}
         </Box>
       )}
 
@@ -34,18 +44,25 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageOnRight, projectData }) 
         )}
         <Text variant="hero">{projectData.description}</Text>
         <Flex direction="row" gap={2} marginTop={2} width="100%" wrap="wrap">
-          {projectData.tags.map((tag) => (
-            <TagPill status={tag} />
+          {projectData.tags.map((tag, index) => (
+            <TagPill key={`${tag}-${projectData.title}-${index}`} status={tag} />
           ))}
         </Flex>
 
-        <Flex direction="row" align="end" gap={4} marginTop={8}>
-          {projectData.links.map((link) => (
-            <Link to={link.url} target="_blank" rel="noopener noreferrer">
-              <Button variant="site">{link.title}</Button>
-            </Link>
-          ))}
-        </Flex>
+        {projectData.links.length > 0 && (
+          <Flex direction="row" align="end" gap={4} marginTop={8}>
+            {projectData.links.map((link, index) => (
+              <Link
+                to={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={`${projectData.title}-link-${index}`}
+              >
+                <Button variant="site">{link.title}</Button>
+              </Link>
+            ))}
+          </Flex>
+        )}
       </Flex>
 
       {imageOnRight && (
@@ -58,7 +75,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageOnRight, projectData }) 
           borderWidth={1}
           height="100%"
         >
-          <Image src={projectData.image} width="auto" />
+          {projectData.image ? (
+            <>
+              <Link to={projectData.image} target="_blank" rel="noopener noreferrer">
+                <Image src={projectData.image} width="auto" />
+              </Link>
+            </>
+          ) : (
+            <AspectRatio ratio={16 / 9}>
+              <Box bgColor="vazBlue.500" />
+            </AspectRatio>
+          )}
         </Box>
       )}
     </Flex>
