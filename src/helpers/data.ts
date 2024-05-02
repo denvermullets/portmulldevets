@@ -142,7 +142,7 @@ export const projectData = [
     links: [
       {
         id: 1,
-        url: "shttps://www.99staples.com/collections/denvermullets/9",
+        url: "https://www.99staples.com/collections/denvermullets/9",
         title: "Live Site",
       },
       {
