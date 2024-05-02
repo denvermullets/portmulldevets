@@ -26,7 +26,13 @@ export const portHeading: StyleConfig = {
       color: "vazBlue.700",
       fontStyle: "italic",
       fontWeight: "800",
-      fontSize: "48px",
+      fontSize: "3em",
+    },
+    project: {
+      color: "vazBlue.700",
+      fontStyle: "italic",
+      fontWeight: "800",
+      // fontSize: "3em",
     },
   },
 };

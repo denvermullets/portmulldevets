@@ -6,8 +6,8 @@ const Hero: React.FC = () => {
   return (
     <Flex justifyContent="center">
       <Flex maxW="72rem" direction="row" alignItems="center" justifyContent="center">
-        <Flex direction="column" width="50%" gap={6}>
-          <Heading as="h2" variant="hero">
+        <Flex direction="column" width={{ xl: "50%" }} gap={6}>
+          <Heading as="h2" variant="hero" fontSize={{ base: "2em", xl: "3em" }}>
             Hi, I'm Ryan.
           </Heading>
           <Text variant="hero" marginTop={-6}>
@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
             we build apps for some of the world's largest companies. By night I jam on side projects
             and/or freelance projects.
           </Text>
-          <Text variant="hero">
+          <Text variant="accent">
             Want to chat a freelance project or something else? Drop me a line!
           </Text>
           <Link to="mailto:ryan.vaznis@gmail.com">

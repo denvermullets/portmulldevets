@@ -8,7 +8,7 @@ export type ProjectData = {
   tags: string[];
 };
 
-type ProjectDataLink = {
+export type ProjectDataLink = {
   id: number;
   url: string;
   title: string;

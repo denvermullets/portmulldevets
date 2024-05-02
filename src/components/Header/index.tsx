@@ -22,11 +22,11 @@ const Header = () => {
         <Box height={10} width={10}>
           <BeardHat />
         </Box>
-        <Heading variant="navBar" as="h3" size="lg">
+        <Heading variant="navBar" as="h3" size={{ xl: "lg" }}>
           Ryan Vaznis
         </Heading>
       </HStack>
-      <HStack spacing={4} marginRight={2}>
+      <HStack spacing={{ base: 0, xl: 4 }} marginRight={2}>
         <Link to="https://github.com/denvermullets" target="_blank" rel="noopener noreferrer">
           <Button variant="href">Github</Button>
         </Link>
