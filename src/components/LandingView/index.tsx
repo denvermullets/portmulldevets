@@ -1,10 +1,12 @@
-import { Box, Divider, Flex, Heading } from "@chakra-ui/react";
+import { Box, Divider, Flex, Heading, useBreakpointValue } from "@chakra-ui/react";
 import Hero from "../Hero";
 import { projectData } from "../../helpers/data";
 import ProjectCard from "../ProjectCard";
 import { Fragment } from "react/jsx-runtime";
 
 const LandingView: React.FC = () => {
+  const isDesktop = useBreakpointValue({ base: false, xl: true });
+
   return (
     <Box marginBottom={16}>
       <Box marginY={{ base: 16, xl: 32 }}>
@@ -13,14 +15,25 @@ const LandingView: React.FC = () => {
       <Flex
         direction="row"
         alignItems="center"
+        justifyContent={{ base: "end", xl: "start" }}
         marginTop={8}
         padding={{ xl: 8 }}
         marginBottom={{ sm: 8 }}
       >
-        <Heading variant="sectionTitle" as="h6" marginRight={{ base: 2, xl: 4 }}>
+        {!isDesktop && (
+          <Divider orientation="horizontal" flex="1" borderColor="vazBlue.700" maxWidth="16rem" />
+        )}
+        <Heading
+          variant="sectionTitle"
+          as="h6"
+          marginRight={{ base: 0, xl: 4 }}
+          marginLeft={{ base: 2, xl: 0 }}
+        >
           Projects
         </Heading>
-        <Divider orientation="horizontal" flex="1" borderColor="vazBlue.700" maxWidth="16rem" />
+        {isDesktop && (
+          <Divider orientation="horizontal" flex="1" borderColor="vazBlue.700" maxWidth="16rem" />
+        )}
       </Flex>
       <Flex direction="column" gap={8} paddingX={{ xl: 16 }}>
         {projectData.map((project, index) => (

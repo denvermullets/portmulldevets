@@ -71,7 +71,10 @@ export const projectData = [
     id: 3,
     title: "When the Music Stops",
     image: "src/assets/wtms.png",
-    description: "A super minimal callback to oldschool PhPbb forums, built with Ruby on Rails.",
+    description:
+      "A super minimal callback to oldschool PhPbb forums, built with Ruby on Rails. Initially started as a way to play with newest Hotwire and Turbo stuff in Rails 7, and it\
+      has grown into a small collection of people talking about music. It's really basic but I added some regex to handle auto embeds so we don't have to use bbcode style tags all\
+      over the place.",
     freelance: false,
     links: [
       {
@@ -92,7 +95,7 @@ export const projectData = [
     title: "MindWire",
     image: null,
     description:
-      "Was tasked with building an employee resource dashboard using Strapi for the backend and React Typescript on the frontend. Can't show the app but it exists, I promise 😁",
+      "I was tasked with building an employee resource dashboard using Strapi for the backend and React Typescript on the frontend. I can't show the app but it exists, I promise 😁",
     freelance: true,
     links: [],
     tags: ["React", "Typescript", "Strapi", "Node.js"],
@@ -104,7 +107,7 @@ export const projectData = [
     description:
       "NBA Lineup visualizer uitilizing data scraped via my Ruby on Rails API to show you the starting \
       lineups thru the season. The backend uses a Sidekiq for initial ingestion of data that is scraped\
-      from a popular site that sportsfans know 😄.",
+      from a popular site.",
     freelance: false,
     links: [
       {
