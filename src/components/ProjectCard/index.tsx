@@ -1,6 +1,5 @@
 import { AspectRatio, Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import { ProjectData } from "../../helpers/data";
-import TagPill from "../TagPill";
 import { Link } from "react-router-dom";
 
 type ProjectCardProps = {
@@ -44,8 +43,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageOnRight, projectData }) 
         )}
         <Text variant="hero">{projectData.description}</Text>
         <Flex direction="row" gap={2} marginTop={2} width="100%" wrap="wrap">
+          <Text variant="hero">Stack used:</Text>
           {projectData.tags.map((tag, index) => (
-            <TagPill key={`${tag}-${projectData.title}-${index}`} status={tag} />
+            <Text key={`${tag}-${projectData.title}-${index}`} variant="hero">
+              {tag}
+            </Text>
           ))}
         </Flex>
 

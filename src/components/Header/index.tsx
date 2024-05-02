@@ -1,5 +1,6 @@
-import { Box, Flex, HStack, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, HStack, Heading } from "@chakra-ui/react";
 import { BeardHat } from "../../helpers/icons";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -26,10 +27,19 @@ const Header = () => {
         </Heading>
       </HStack>
       <HStack spacing={4} marginRight={2}>
-        <Text>About</Text>
-        <Text>Projects</Text>
-        <Text>Resume</Text>
-        <Text>Contact</Text>
+        <Link to="https://github.com/denvermullets" target="_blank" rel="noopener noreferrer">
+          <Button variant="href">Github</Button>
+        </Link>
+        <Link
+          to="https://www.linkedin.com/in/ryanvaznis/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button variant="href">Linkedin</Button>
+        </Link>
+        <Link to="mailto:ryan.vaznis@gmail.com">
+          <Button variant="href">Contact Me</Button>
+        </Link>
       </HStack>
     </Flex>
   );

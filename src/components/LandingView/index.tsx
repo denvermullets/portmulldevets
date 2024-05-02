@@ -6,8 +6,10 @@ import { Fragment } from "react/jsx-runtime";
 
 const LandingView: React.FC = () => {
   return (
-    <Box marginTop={8}>
-      <Hero />
+    <Box marginBottom={16}>
+      <Box marginTop={32} marginBottom={32}>
+        <Hero />
+      </Box>
       <Flex direction="row" alignItems="center" marginTop={8} padding={8}>
         <Heading variant="sectionTitle" as="h6" marginRight={4}>
           Projects

@@ -41,7 +41,6 @@ export const projectData = [
       "Postgres",
       "RSpec",
       "Figma",
-      "Design",
     ],
   },
   {
@@ -65,7 +64,7 @@ export const projectData = [
         title: "Frontend Repo",
       },
     ],
-    tags: ["React", "Typescript", "Figma", "Design"],
+    tags: ["React", "Typescript", "Figma"],
   },
 
   {
@@ -86,7 +85,7 @@ export const projectData = [
         title: "Rails Repo",
       },
     ],
-    tags: ["Ruby on Rails", "Postgres", "Tailwind", "Figma", "Design"],
+    tags: ["Ruby on Rails", "Postgres", "Tailwind", "Figma"],
   },
   {
     id: 4,
@@ -124,7 +123,7 @@ export const projectData = [
         title: "Backend Repo",
       },
     ],
-    tags: ["React", "Typescript", "Ruby on Rails", "Sidekiq", "Figma", "Design"],
+    tags: ["React", "Typescript", "Ruby on Rails", "Sidekiq", "Figma"],
   },
   {
     id: 6,
@@ -154,7 +153,7 @@ export const projectData = [
         title: "Backend Repo",
       },
     ],
-    tags: ["React", "Typescript", "Ruby on Rails", "Sidekiq", "Postgres", "Figma", "Design"],
+    tags: ["React", "Typescript", "Ruby on Rails", "Sidekiq", "Postgres", "Figma"],
   },
   {
     id: 7,
