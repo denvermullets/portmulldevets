@@ -18,7 +18,7 @@ export const projectData = [
   {
     id: 1,
     title: "BallotBox",
-    image: "src/assets/vote-ballotbox.png",
+    image: "public/vote-ballotbox.png",
     description:
       "Custom voting platform with embeddable polling widget. Built with a React \
       frontend and a Ruby on Rails API that uses a Postgres database. I've also setup a REDIS instance that powers \
@@ -46,7 +46,7 @@ export const projectData = [
   {
     id: 2,
     title: "Simple Budget Control",
-    image: "src/assets/simple-budget-control.png",
+    image: "public/simple-budget-control.png",
     description:
       "A simple tool to help manage your budget paycheck to paycheck. This is based off of an automated \
       spreadsheet I've been using for years as others have asked for it. Built with just React v18 and we \
@@ -70,7 +70,7 @@ export const projectData = [
   {
     id: 3,
     title: "When the Music Stops",
-    image: "src/assets/wtms.png",
+    image: "public/wtms.png",
     description:
       "A super minimal callback to oldschool PhPbb forums, built with Ruby on Rails. Initially started as a way to play with newest Hotwire and Turbo stuff in Rails 7, and it\
       has grown into a small collection of people talking about music. It's really basic but I added some regex to handle auto embeds so we don't have to use bbcode style tags all\
@@ -103,7 +103,7 @@ export const projectData = [
   {
     id: 5,
     title: "Basketball Timeline",
-    image: "src/assets/basketball-timeline.png",
+    image: "public/basketball-timeline.png",
     description:
       "NBA Lineup visualizer uitilizing data scraped via my Ruby on Rails API to show you the starting \
       lineups thru the season. The backend uses a Sidekiq for initial ingestion of data that is scraped\
@@ -131,7 +131,7 @@ export const projectData = [
   {
     id: 6,
     title: "99 Staples",
-    image: "src/assets/99staples.png",
+    image: "public/99staples.png",
     description:
       "A Magic: The Gathering collection app built with Typescript, React, and Ruby on Rails. Hosted on \
       Render and it uses Sidekiq, REDIS, and a Postgresql database. A worker keeps the current database of \
@@ -161,7 +161,7 @@ export const projectData = [
   {
     id: 7,
     title: "Mentumm",
-    image: "src/assets/mentumm.png",
+    image: "public/mentumm.png",
     description:
       "Career coach booking service. Built using Typescript, React, and uses a Nodejs, Express, REST API on the backend. Admin dashboard was built with ReTool and also uses Mixpanel to track events for reporting.",
     freelance: true,
@@ -177,7 +177,7 @@ export const projectData = [
   {
     id: 8,
     title: "Collectable Moments",
-    image: "src/assets/collectable-moments.png",
+    image: "public/collectable-moments.png",
     description:
       "A simple daily memory app built with Typescript, React, and a Ruby on Rails API. ",
     freelance: false,
