@@ -11,13 +11,13 @@ const Hero: React.FC = () => {
             Hi, I'm Ryan.
           </Heading>
           <Text variant="hero" marginTop={-6}>
-            I'm a product focused fullstack developer, designer and photographer. I love working
+            I'm a product focused fullstack developer, designer, and photographer. I love working
             with Ruby, Rails, Typescript, React, Next, and Nodejs. By day I work at an agency where
             we build apps for some of the world's largest companies. By night I jam on side projects
             and/or freelance projects.
           </Text>
           <Text variant="accent">
-            Want to chat a freelance project or something else? Drop me a line!
+            Want to chat about a freelance project or something else? Drop me a line!
           </Text>
           <Link to="mailto:ryan.vaznis@gmail.com">
             <Button variant="site" width="8rem">
