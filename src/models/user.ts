@@ -3,7 +3,7 @@ import config from "../config";
 import { UAParser } from "ua-parser-js";
 
 export const logVisit = async (event: string) => {
-  if (!config.API_URL || !config.IPINFO_TOKEN) {
+  if (!config.API_URL) {
     console.error("missing configs");
     return;
   }
