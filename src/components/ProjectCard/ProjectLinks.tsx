@@ -1,6 +1,7 @@
 import { Button, Flex } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { ProjectDataLink } from "../../helpers/data";
+import { logVisit } from "../../models/user";
 
 type ProjectLinksProps = {
   links: ProjectDataLink[];
@@ -8,6 +9,10 @@ type ProjectLinksProps = {
 };
 
 const ProjectLinks: React.FC<ProjectLinksProps> = ({ links, title }) => {
+  const logInitialVisit = async (desc: string) => {
+    await logVisit(desc + "_click");
+  };
+
   return (
     <Flex
       direction="row"
@@ -22,6 +27,7 @@ const ProjectLinks: React.FC<ProjectLinksProps> = ({ links, title }) => {
           target="_blank"
           rel="noopener noreferrer"
           key={`${title}-link-${index}`}
+          onClick={() => logInitialVisit(link.url)}
         >
           <Button variant="site">{link.title}</Button>
         </Link>
