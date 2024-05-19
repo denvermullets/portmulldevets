@@ -3,6 +3,11 @@ import config from "../config";
 import { UAParser } from "ua-parser-js";
 
 export const logVisit = async (event: string) => {
+  if (!config.API_URL || !config.IPINFO_TOKEN) {
+    console.error("missing configs");
+    return;
+  }
+
   const userAgent = navigator.userAgent;
   const screenWidth = window.screen.width;
   const screenHeight = window.screen.height;
