@@ -3,9 +3,19 @@ import Hero from "../Hero";
 import { projectData } from "../../helpers/data";
 import ProjectCard from "../ProjectCard";
 import { Fragment } from "react/jsx-runtime";
+import { useEffect } from "react";
+import { logVisit } from "../../models/user";
 
 const LandingView: React.FC = () => {
   const isDesktop = useBreakpointValue({ base: false, xl: true });
+
+  useEffect(() => {
+    const logInitialVisit = async () => {
+      await logVisit("page_visit");
+    };
+
+    logInitialVisit();
+  }, []);
 
   return (
     <Box marginBottom={16}>

@@ -1,8 +1,12 @@
 import { Box, Button, Flex, HStack, Heading } from "@chakra-ui/react";
 import { BeardHat } from "../../helpers/icons";
 import { Link } from "react-router-dom";
+import { logVisit } from "../../models/user";
 
 const Header = () => {
+  const logClick = async (desc: string) => {
+    await logVisit(desc + "_click");
+  };
   return (
     <Flex
       as="header"
@@ -27,17 +31,23 @@ const Header = () => {
         </Heading>
       </HStack>
       <HStack spacing={{ base: 0, xl: 4 }} marginRight={2}>
-        <Link to="https://github.com/denvermullets" target="_blank" rel="noopener noreferrer">
+        <Link
+          to="https://github.com/denvermullets"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => logClick("github")}
+        >
           <Button variant="href">Github</Button>
         </Link>
         <Link
           to="https://www.linkedin.com/in/ryanvaznis/"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => logClick("linkedIn")}
         >
           <Button variant="href">Linkedin</Button>
         </Link>
-        <Link to="mailto:ryan.vaznis@gmail.com">
+        <Link to="mailto:ryan.vaznis@gmail.com" onClick={() => logClick("email")}>
           <Button variant="href">Contact Me</Button>
         </Link>
       </HStack>
