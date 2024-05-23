@@ -2,7 +2,7 @@ import axios from "axios";
 import config from "../config";
 import { UAParser } from "ua-parser-js";
 
-export const logVisit = async (event: string) => {
+export const logVisit = async (name: string) => {
   if (!config.API_URL) {
     console.error("missing configs");
     return;
@@ -20,9 +20,9 @@ export const logVisit = async (event: string) => {
     uaResult.device.type || "desktop"
   }`;
 
-  await axios.post(`${config.API_URL}/api/v1/visits`, {
-    visit: {
-      event,
+  await axios.post(`${config.API_URL}/api/v1/events`, {
+    event: {
+      name,
       browser,
       operating_system: os,
       screen_size: `${screenWidth}w x ${screenHeight}h`,
