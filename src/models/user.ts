@@ -2,7 +2,7 @@ import axios from "axios";
 import config from "../config";
 import { UAParser } from "ua-parser-js";
 
-export const logVisit = async (name: string, tag: string, target: string | null) => {
+export const logVisit = async (name: string, tag: string, target: string) => {
   if (!config.API_URL) {
     console.error("missing configs");
     return;
