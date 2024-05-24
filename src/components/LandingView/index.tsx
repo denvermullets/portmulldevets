@@ -11,7 +11,7 @@ const LandingView: React.FC = () => {
 
   useEffect(() => {
     const logInitialVisit = async () => {
-      await logVisit("page_visit");
+      await logVisit("Page Visit", "page_visit", "http://vaznis.com");
     };
 
     logInitialVisit();

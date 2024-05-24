@@ -4,9 +4,6 @@ import { Link } from "react-router-dom";
 import { logVisit } from "../../models/user";
 
 const Header = () => {
-  const logClick = async (desc: string) => {
-    await logVisit(desc + "_click");
-  };
   return (
     <Flex
       as="header"
@@ -35,7 +32,7 @@ const Header = () => {
           to="https://github.com/denvermullets"
           target="_blank"
           rel="noopener noreferrer"
-          onClick={() => logClick("github")}
+          onClick={() => logVisit("Click Link", "click_link", "https://github.com/denvermullets")}
         >
           <Button variant="href">Github</Button>
         </Link>
@@ -43,11 +40,16 @@ const Header = () => {
           to="https://www.linkedin.com/in/ryanvaznis/"
           target="_blank"
           rel="noopener noreferrer"
-          onClick={() => logClick("linkedIn")}
+          onClick={() =>
+            logVisit("Click Link", "click_link", "https://www.linkedin.com/in/ryanvaznis/")
+          }
         >
           <Button variant="href">Linkedin</Button>
         </Link>
-        <Link to="mailto:ryan.vaznis@gmail.com" onClick={() => logClick("email")}>
+        <Link
+          to="mailto:ryan.vaznis@gmail.com"
+          onClick={() => logVisit("Click Link", "click_link", "mailto:ryan.vaznis@gmail.com")}
+        >
           <Button variant="href">Contact Me</Button>
         </Link>
       </HStack>
