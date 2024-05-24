@@ -9,10 +9,6 @@ type ProjectLinksProps = {
 };
 
 const ProjectLinks: React.FC<ProjectLinksProps> = ({ links, title }) => {
-  const logInitialVisit = async (desc: string) => {
-    await logVisit(desc + "_click");
-  };
-
   return (
     <Flex
       direction="row"
@@ -27,7 +23,7 @@ const ProjectLinks: React.FC<ProjectLinksProps> = ({ links, title }) => {
           target="_blank"
           rel="noopener noreferrer"
           key={`${title}-link-${index}`}
-          onClick={() => logInitialVisit(link.url)}
+          onClick={() => logVisit("Click Link", "click_link", link.url)}
         >
           <Button variant="site">{link.title}</Button>
         </Link>
