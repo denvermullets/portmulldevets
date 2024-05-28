@@ -45,12 +45,36 @@ export const projectData = [
   },
   {
     id: 2,
+    title: "Denvermullets Analytics",
+    image: "/analytics.png",
+    description:
+      "After having a need for this type of product without an additional cost and a desire to keep user information \
+      private, I created this Google Analytics meets Mixpanel dashboard. You can send in event tags to track server \
+      or client events while having an idea of how many users are visiting your site. Additionally, you're able to \
+      tell at a glance what kind of interaction the user had with your product.",
+    freelance: false,
+    links: [
+      {
+        id: 1,
+        url: "https://stats.vaznis.com/dashboard",
+        title: "Live Site",
+      },
+      {
+        id: 2,
+        url: "https://github.com/denvermullets/portmulldevets-stats",
+        title: "Repo",
+      },
+    ],
+    tags: ["Rails", "Stimulus", "Turbo", "Tailwind", "Figma"],
+  },
+  {
+    id: 3,
     title: "Simple Budget Control",
     image: "/simple-budget-control.png",
     description:
       "A simple tool to help manage your budget paycheck to paycheck. This is based off of an automated \
       spreadsheet I've been using for years as others have asked for it. Built with just React v18 and we \
-      are storing all data in LocalStorage",
+      are storing all data in LocalStorage.",
     freelance: false,
     links: [
       {
@@ -68,7 +92,7 @@ export const projectData = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "When the Music Stops",
     image: "/wtms.png",
     description:
@@ -90,16 +114,16 @@ export const projectData = [
     ],
     tags: ["Ruby on Rails", "Postgres", "Tailwind", "Figma"],
   },
-  {
-    id: 4,
-    title: "MindWire",
-    image: null,
-    description:
-      "I was tasked with building an employee resource dashboard using Strapi for the backend and React Typescript on the frontend. I can't show the app but it exists, I promise 😁",
-    freelance: true,
-    links: [],
-    tags: ["React", "Typescript", "Strapi", "Node.js"],
-  },
+  // {
+  //   id: 4,
+  //   title: "MindWire",
+  //   image: null,
+  //   description:
+  //     "I was tasked with building an employee resource dashboard using Strapi for the backend and React Typescript on the frontend. I can't show the app but it exists, I promise 😁",
+  //   freelance: true,
+  //   links: [],
+  //   tags: ["React", "Typescript", "Strapi", "Node.js"],
+  // },
   {
     id: 5,
     title: "Basketball Timeline",
