@@ -1,0 +1,5 @@
+[[redirects]]
+from = "/baby"
+to = "https://www.babylist.com/list/melissa-basaran"
+status = 301
+force = true
